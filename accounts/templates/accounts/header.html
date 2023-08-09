@@ -1,0 +1,16 @@
+<nav class="navbar navbar-expand-lg  bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><b>CAR WORLD</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav color-white">
+          <a class="nav-link active" aria-current="page" href="{% url 'Car_Platform:home_page' %}"><b>Home</b></a>
+          <a class="nav-link" href="{% url 'accounts:register' %}"><b>Register</b></a>
+          <a class="nav-link" href="{% url 'accounts:login' %}"><b>Login</b></a>
+          <a class="nav-link" href="{% url 'accounts:logout' %}"><b>Logout</b></a>
+        </div>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,26 @@
+{% extends 'accounts/base.html' %}
+
+
+
+
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <div class="row justify-content-center align-items-center min-vh-10">
+        <div class="col-md-4">
+            <h1 class="text-center mt-5 mb-5">Register Your Account</h1>
+            <form method="post" class="register-form">
+                {{ reg_form.as_p }}
+                {% csrf_token %}
+                <button class="btn btn-primary">Register</button>
+            </form>
+            <p class="mt-3">Already Registered? <a href="{% url 'accounts:login' %}">Login here</a></p>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+
+
